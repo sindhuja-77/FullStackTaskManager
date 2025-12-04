@@ -1,0 +1,350 @@
+
+/* General Body
+ body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  color: #333;
+}
+
+
+.app-container {
+  max-width: 700px;
+  width: 90%;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #3b82f6, #06b6d4);
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input {
+  padding: 12px 15px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+form input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 8px rgba(59,130,246,0.3);
+}
+
+form button {
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  background: linear-gradient(90deg, #3b82f6, #06b6d4);
+  color: #fff;
+  transition: all 0.2s ease;
+}
+
+form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(59,130,246,0.3);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+li {
+  background: #f9fafb;
+  padding: 15px 20px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+li span {
+  flex: 1;
+  font-size: 16px;
+}
+
+
+
+li button {
+  margin-left: 10px;
+  padding: 7px 14px;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button.complete {
+  background: #10b981;
+  color: #fff;
+}
+
+button.complete:hover {
+  background: #059669;
+  transform: scale(1.05);
+}
+
+button.delete {
+  background: #ef4444;
+  color: #fff;
+}
+
+button.delete:hover {
+  background: #b91c1c;
+  transform: scale(1.05);
+}
+
+button.edit {
+  background: #f59e0b;
+  color: #fff;
+}
+
+button.edit:hover {
+  background: #b45309;
+  transform: scale(1.05);
+}
+
+button.save {
+  background: #3b82f6;
+  color: #fff;
+}
+
+button.save:hover {
+  background: #2563eb;
+  transform: scale(1.05);
+}
+
+button.cancel {
+  background: #6b7280;
+  color: #fff;
+}
+
+button.cancel:hover {
+  background: #4b5563;
+  transform: scale(1.05);
+}
+
+
+li input {
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+  outline: none;
+  margin-right: 8px;
+}
+
+li input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 6px rgba(59,130,246,0.3);
+}
+
+
+@media (max-width: 600px) {
+  .app-container {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  li button {
+    margin-left: 0;
+  }
+}  */
+
+
+
+/* App.css */
+
+/* Overall background */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 25%, #a1c4fd 75%, #c2e9fb 100%);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-size: 400% 400%;
+  animation: bgShift 12s ease infinite;
+}
+
+/* Main container */
+.app {
+  width: 90%;
+  max-width: 900px;
+  background: linear-gradient(145deg, rgba(255,255,255,0.95), rgba(250,250,255,0.9));
+  padding: 3rem;
+  border-radius: 25px;
+  margin-top: 3rem;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(18px);
+  animation: fadeIn 1s ease;
+}
+
+/* Title styling */
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  background: linear-gradient(90deg, #ff6a00, #ee0979, #00c9ff);
+
+  letter-spacing: 1.5px;
+  margin-bottom: 2rem;
+  text-shadow: 0 0 25px rgba(255, 107, 107, 0.3);
+}
+
+
+/* Inputs */
+input[type="text"] {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  margin-bottom: 1.2rem;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  font-size: 1rem;
+  color: #333;
+  background: linear-gradient(135deg, #ffffff, #e8f0fe);
+  transition: all 0.3s ease;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #ff758c;
+  box-shadow: 0 0 10px rgba(255,117,140,0.5);
+  background: #fff;
+}
+
+/* Buttons */
+button {
+  background: linear-gradient(90deg, #36d1dc, #5b86e5, #8e2de2);
+  color: white;
+  border: none;
+  padding: 0.7rem 1.4rem;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 0.3rem;
+  transition: all 0.3s ease;
+  background-size: 200% auto;
+}
+
+button:hover {
+  background-position: right center;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(94, 120, 255, 0.4);
+}
+
+/* Task list */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+li {
+  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+  border-left: 6px solid #8e2de2;
+  border-radius: 14px;
+  padding: 1.2rem;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+li:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #fceabb, #f8b500);
+}
+
+li span {
+  color: #333;
+  font-weight: 500;
+}
+
+/* Recommendations section */
+.recommendations {
+  margin-top: 2rem;
+  border-top: 3px solid rgba(255, 118, 117, 0.5);
+  padding-top: 1.2rem;
+}
+
+.recommendation-box {
+  background: linear-gradient(145deg, #d4fc79, #96e6a1);
+  border-left: 6px solid #00b09b;
+  padding: 1rem;
+  border-radius: 12px;
+  margin-top: 1rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  animation: glowPulse 2s infinite alternate;
+}
+
+.recommendation-box p {
+  color: #222;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Animations */
+@keyframes bgShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes glowPulse {
+  0% { box-shadow: 0 0 10px rgba(0,255,200,0.3); }
+  100% { box-shadow: 0 0 25px rgba(0,255,200,0.6); }
+}
